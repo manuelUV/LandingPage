@@ -7,45 +7,365 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="/public/css/styles.css">
+    <script src="https://kit.fontawesome.com/38a9a930bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="public/css/styles.css">
     <title>Landing Page</title>
   </head>
   <body class="body">
-      <header class="header"> 
+    <div class="app-wrap">
+      <header class="masthead bg-primary text-white text-center" id="topBar"> 
         <div class="bg-dark">
           <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-              <a class="navbar-brand" href="#">Start boostrap</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-lg navbar-light" >
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav w-100 justify-content-center">
-                  <a class="nav-item nav-link active" href="#">Portafolio <span class="sr-only">(current)</span></a>
-                  <a class="nav-item nav-link" href="#">About</a>
-                  <a class="nav-item nav-link" href="#">Contact</a>
+                <div class="navg  navbar-nav w-100 justify-content-center">
+                  <a class="nav-item nav-link active" href="#portfolio">Portfolio <span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="#about">About</a>
+                  <a class="nav-item nav-link" href="#contact">Contact</a>
                   
                 </div>
               </div>
             </nav>
           </div>
         </div>
-
-        <div class="text-header d-flex align-item-center">
-          <div class="container">
-            <div class="row">
-                <div class="col-sm-8">
-<p>sads</p>
-                </div>
-            </div>
-          </div>
-        </div>
       </header>
+    </div>
+      <div class="d-flex justify-content-center">
+        <div class="p-3 mb-2 bg-transparent text-dark">
+                <img class="rounded mx-auto d-block"  src="views/img/0.jpg"> 
+                <h1 class="display-5 text-dark">JMGA United Virtualities</h1>  
+                <div class="divider"><span></span><span><i class="far fa-star" ></i></span><span></span>
+                </div>  
+                <div class="mx-auto" style="width: 300px;">
+                  Graphic Artist - Web Designer - Illustrator
+                </div>
+                           
+        </div>
+      </div>
+ <section id="portfolio">
+  <div class="container">
+    <h2>PORTFOLIO</h2>
+    <div class="divider"><span></span><span><i class="far fa-star" ></i></span><span></span>
+    </div>
+  </div>
+  <div class="container py-md-3 py-sm-1">
+    <div class="d-flex flex-row justify-content-around flex-wrap">
+      <div class="m-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#portfolioModal1"><img src="views/img/portfolio/submarine.png" alt=""></div>
+      <div class="m-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#portfolioModal2" ><img src="views/img/portfolio/safe.png" alt=""></div>
+      <div class="m-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#portfolioModal3" ><img src="views/img/portfolio/game.png" alt=""></div>
+      <div class="m-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#portfolioModal4"><img src="views/img/portfolio/circus.png" alt=""></div>
+      <div class="m-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#portfolioModal5"><img src="views/img/portfolio/cabin.png" alt=""></div>
+      <div class="m-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#portfolioModal6"><img src="views/img/portfolio/cake.png" alt=""></div>
 
+    </div>
+  </div>
+ </section>
+ <!--About section-->
+ <div class="about" id="about">
+ <div class="d-flex justify-content-center">
+  <div class="p-3 mb-2 bg-transparent text-light">
+          <h1 class="display-5 text-light text-center">ABOUT</h1>  
+          <div class="divider"><span></span><span><i class="far fa-star" ></i></span><span></span>
+          </div>  
+          <div class="row justify-content-around">
+              <div class="col-lg-4 ">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium accusamus, tempore officiis officia voluptatibus quas corporis fugiat nisi laudantium! Mollitia voluptatibus quis obcaecati at dolor rerum delectus laudantium, quae asperiores.</p>
+              </div>
+              <div class="col-lg-4 ">
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit saepe nemo vitae incidunt repellat alias atque distinctio, aliquid harum animi dolor dignissimos ducimus dolorem beatae neque amet enim id.</p>
+              </div>
+          </div>
+                     
+  </div>
+</div>
+</div>
+ <!--Contact section-->
+ <div id="contact">
+<section class="mb-4" >
+  <!--Section heading-->
+  <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Me</h2>
+  <div class="divider"><span></span><span><i class="far fa-star" ></i></span><span></span>
+  </div>
+  <div class="contact">
+    <div class="contact">
+      <!--Grid column-->
+      <div class="form-group col-md-9 mb-md-0 mb-5 text-center">
+          <form id="form-group" name="contact-form" method="POST">
+              <!--Grid row-->
+              <div class="row">
+                  <!--Grid column-->
+                  <div class="col-md-6 text-center">
+                      <div class="md-form mb-0">
+                          <input type="text" class="form-control">
+                          <label for="name" class="">Your name</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+                  <div class="col-6">
+                      <div class="md-form mb-0">
+                          <input type="text" class="form-control">
+                          <label for="email" class="">Your email</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+              </div>
+              <!--Grid row-->
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <input type="text" class="form-control">
+                          <label for="subject" class="">Subject</label>
+                      </div>
+                  </div>
+              </div>
+              <!--Grid row-->
+              <div class="row">
+                  <!--Grid column-->
+                  <div class="col-md-12">
+                      <div class="md-form">
+                          <textarea type="text" rows="2" class="form-control md-textarea"></textarea>
+                          <label for="message">Your message</label>
+                      </div>
+                  </div>
+              </div>
+              <!--Grid row-->
+          </form>
+          <div class="text-center text-md-center">
+              <a class="btn btn-primary" >Send</a>
+          </div>
+          <div class="status"></div>
+      </div>
+  </div>
+</div>
+</section>
+</div>
+<!--Section: Contact v.2-->
+ <!--footer-->
+<!-- Footer -->
+<div class="footer">
+<footer class="page-footer font-small cyan darken-3">
+  <!-- Footer Elements -->
+  <div class="container">
+    <!-- Grid row-->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row-->
+  </div>
+  <!-- Footer Elements -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+</div>
+<!-- Footer -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">LOG</h2>
+                <!-- Icon Divider -->
+                <div class="divider"><span></span><span><i class="far fa-star" ></i></span><span></span>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="views/img/portfolio/submarine.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--SECOND MODAL-->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">SAFE</h2>
+                <!-- Icon Divider -->
+                <div class="divider"><span></span><span><i class="far fa-star" ></i></span><span></span>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="views/img/portfolio/safe.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--THIRD MODAL-->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">GAME</h2>
+                <!-- Icon Divider -->
+                <div class="divider"><span></span><span><i class="far fa-star" ></i></span><span></span>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="views/img/portfolio/game.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--FOUR MODAL-->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">MAGIC</h2>
+                <!-- Icon Divider -->
+                <div class="divider"><span></span><span><i class="far fa-star" ></i></span><span></span>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="views/img/portfolio/circus.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--FIVE MODAL-->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">HOME INTEGRATION</h2>
+                <!-- Icon Divider -->
+                <div class="divider"><span></span><span><i class="far fa-star" ></i></span><span></span>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="views/img/portfolio/cabin.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--SIXTH MODAL-->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">EAT</h2>
+                <!-- Icon Divider -->
+                <div class="divider"><span></span><span><i class="far fa-star" ></i></span><span></span>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="views/img/portfolio/cake.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   </body>
 </html>

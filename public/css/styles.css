@@ -1,8 +1,156 @@
-.header{    
-    width: 100%;
-    min-height: 100vh;
-    background-image: url(/Jellyfish.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+/* Some CSS Setup - nothing to do with flexbox */
+@import url(https://fonts.googleapis.com/css?family=VT323);
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  .divider {								/* minor cosmetics */
+    display: table; 
+    font-size: 24px; 
+    text-align: center; 
+    width: 75%; 						/* divider width */
+    margin: 5px auto;					/* spacing above/below */
 }
+.divider span {
+     display: table-cell; position: relative; 
+    }
+.divider span:first-child, .divider span:last-child {
+    width: 50%;
+    top: 15px;							/* adjust vertical align */
+    -moz-background-size: 100% 2px; 	/* line width */
+    background-size: 100% 2px; 			/* line width */
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+}
+.divider span:first-child {				/* color changes in here */
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#000));
+    background-image: -webkit-linear-gradient(180deg, transparent, #000);
+    background-image: -moz-linear-gradient(180deg, transparent, #000);
+    background-image: -o-linear-gradient(180deg, transparent, #000);
+    background-image: linear-gradient(90deg, transparent, #000);
+}
+.divider span:nth-child(2) {
+    color: #000; padding: 0px 5px; width: auto; white-space: nowrap;
+}
+.divider span:last-child {				/* color changes in here */
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(transparent));
+    background-image: -webkit-linear-gradient(180deg, #000, transparent);
+    background-image: -moz-linear-gradient(180deg, #000, transparent);
+    background-image: -o-linear-gradient(180deg, #000, transparent);
+    background-image: linear-gradient(90deg, #000, transparent);
+}
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    background-image: linear-gradient(260deg, #2376ae 100%, #c16ecf 50%);
+  }
+  .bg-dark{
+      width: 100%;
+  }
+  .navg a{
+      color: #afafaf !important;
+      padding: 10px;
+      font-size: 20px;
+      text-transform: uppercase;
+  }
+  #portfolio{
+    width: 100%;
+    height: 100%;
+    background-color:white;
+  }
+  .container h2{
+    
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+  }
+/* flex- portfolio and modal */
+
+/*Top Bar*/
+#topBar{
+	background-color: #000000;
+  height: 10px; 
+  width: 1440px;
+  position: fixed;
+  top: 0px;
+ 
+}
+
+.leaderboard{
+	width: 50px;
+	height: auto;
+}
+
+.circleImage {
+    width: 100px;
+    height: 100px;
+}
+
+.modal-content{
+	border-radius: 1.59rem;
+	overflow: hidden;
+}
+
+.smallLabel{
+	font-size: .8rem;
+	margin: 0;
+	color: #949395;
+	text-transform: uppercase;
+}
+
+.modal-body h4{
+	margin: 2px 0;
+	font-size: 2rem;
+}
+
+.modal-footer{
+	border: 0;
+}
+
+.modal-header{
+	background-color: #3f3f3f;
+	color: #fff;
+}
+
+.close{
+	color: #fff;
+	font-size: 1.9rem;
+	font-weight: 100;
+	line-height: .8;
+}
+
+.close:hover{
+	color: #d8d6d9;
+}
+
+/*Leaderboard Modal*/
+.nameText{
+	font-size: 18px!important;
+}
+
+.leaderCard{
+	border-radius: 15px;
+	box-shadow: 0 0 8px rgba(0,0,0,.2);
+	background-color: #fff;	
+}
+
+#leaderBoard .modal-content{
+	background-color: #f4f3f5!important;
+}
+.contact{
+  display: flex;
+  justify-content: center;
+}
+.about{
+  background-color: #3f3f3f;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+}
+
